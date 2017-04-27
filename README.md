@@ -51,14 +51,19 @@ While the simple mode is a good way to get started, you will soon want to see th
 * Make sure your device is visible to your computer. You can check this by running ```adb devices```. More information coming soon.
 * Navigate to your Centaurus root folder in the command line, use ionic to add android platform
 * Build, deploy and run the app. Be Happy!
+
+```bash
+cp configTemplate.xml config.xml
+```
+
 ```bash
 ionic platform android
 ionic run android
 ```
 Some problems might arise with the latest android platform version. Centaurus is best tested with version 3.7.1. You can get it by
 ```bash
-cordova remove platform android
-cordova add platform android@3.7.1
+cordova platform remove android
+cordova platform add android@3.7.1
 ```
 ### Advanced (other platforms)
 
